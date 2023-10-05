@@ -11,6 +11,7 @@
 #include "../DrvApi/Motor.h"
 #include "../InputCtrl/Course.h"
 #endif
+#include "../RoboApp/Trace.h"
 #include "SysCtrl.h"
 
 /*** 公開関数 ********************************************/
@@ -66,7 +67,7 @@ void sc_runningMain(void)
  *********************************************************/
 void sc_traceMain(void)
 {
-//	tr_run();
+	tr_run();
 	return;
 }
 
