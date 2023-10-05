@@ -11,6 +11,7 @@
 #include "ev3api.h"
 #include "app.h"
 #include "etroboc_ext.h"
+#include "SysCtrl.h"
 
 #if defined(BUILD_MODULE)
     #include "module_cfg.h"
