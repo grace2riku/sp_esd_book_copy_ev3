@@ -1,3 +1,5 @@
+#include "../InputCtrl/Course.h"
+
 #include "Trace.h"
 
 typedef enum {
@@ -29,6 +31,9 @@ void tr_run(void) {
 
 
 static void tr_traceCource(void) {
+    diffCourse_t    diff;   /* コースとのズレ */
+
+    diff = cs_detectDifference();   /* ズレを検出する */
 
     return;
 }
