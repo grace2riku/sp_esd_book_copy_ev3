@@ -38,6 +38,7 @@ static void tr_traceCource(void) {
 
     diff = cs_detectDifference();   /* ズレを検出する */
     drct = nv_naviCourse(diff);     /* 進行方向を決める */
+    dr_move(drct);                  /* 進行方向に進む */
 
     return;
 }

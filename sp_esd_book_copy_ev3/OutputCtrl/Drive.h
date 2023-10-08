@@ -3,7 +3,7 @@
 
 /* 前後方向 */
 typedef enum {
-    sStopForward,   /* その場 */
+    eStopForward,   /* その場 */
     eMoveForward,   /* 前方向 */
 } directForward_t;
 
