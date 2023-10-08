@@ -1,4 +1,6 @@
 #include "../InputCtrl/Course.h"
+#include "../OutputCtrl/Drive.h"
+#include "../NaviCtrl/Navi.h"
 
 #include "Trace.h"
 
@@ -31,9 +33,11 @@ void tr_run(void) {
 
 
 static void tr_traceCource(void) {
-    diffCourse_t    diff;   /* コースとのズレ */
+    diffCourse_t        diff;   /* コースとのズレ */
+    directionVector_t   drct;   /* 進行方向 */
 
     diff = cs_detectDifference();   /* ズレを検出する */
+    drct = nv_naviCourse(diff);     /* 進行方向を決める */
 
     return;
 }
