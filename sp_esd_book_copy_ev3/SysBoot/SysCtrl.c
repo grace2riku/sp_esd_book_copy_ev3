@@ -5,13 +5,8 @@
  * 作成者     : System-san
  *********************************************************/
 /*** 利用ファイルのヘッダ ***/
-#if 0
 #include "../RoboApp/Trace.h"
 #include "../DrvApi/Sensor.h"
-#include "../DrvApi/Motor.h"
-#include "../InputCtrl/Course.h"
-#endif
-#include "../RoboApp/Trace.h"
 #include "SysCtrl.h"
 
 /*** 公開関数 ********************************************/
@@ -24,7 +19,7 @@
  *********************************************************/
 void sc_init(void)
 {
-//	ss_init();
+	ss_init();
 //	mt_init();
 //	tr_init();
 	return;
@@ -39,7 +34,7 @@ void sc_init(void)
  *********************************************************/
 void sc_term(void)
 {
-//	ss_term();
+	ss_term();
 //	mt_term();
 //	tr_term();
 	return;
