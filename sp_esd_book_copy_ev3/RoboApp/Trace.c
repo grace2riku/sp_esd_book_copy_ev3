@@ -14,6 +14,25 @@ static robotState_t current_state;
 static void tr_traceCource(void);
 
 
+void tr_init(void) {
+    cs_init();
+    nv_init();
+    dr_init();
+    current_state = eDiagnosis; /* 電源オン直後は自己診断 */
+
+    return;
+}
+
+
+void tr_term(void) {
+    dr_term();
+    nv_term();
+    cs_term();
+
+    return;
+}
+
+
 void tr_run(void) {
     switch (current_state)
     {
@@ -23,6 +42,22 @@ void tr_run(void) {
     case eRunning:    /* 走行中 */
         /* 走行する */
         tr_traceCource();
+        break;    
+    default:
+        /* 何もしない */
+        break;
+    }
+    return;
+}
+
+
+void tr_runnable(void) {
+    switch (current_state) {
+    case eDiagnosis:
+        current_state = eRunning;
+        break;
+    case eRunning:
+        /* 何もしない */
         break;    
     default:
         /* 何もしない */

@@ -3,6 +3,18 @@
 
 #include "Navi.h"
 
+void nv_init(void) {
+
+    return;
+}
+
+
+void nv_term(void) {
+
+    return;
+}
+
+
 directionVector_t nv_naviCourse(diffCourse_t diff) {
     directionVector_t   navi;
 

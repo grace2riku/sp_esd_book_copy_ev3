@@ -19,7 +19,8 @@ typedef struct {
     directTurn_t    turn;
 } directionVector_t;
 
-
+extern void dr_init(void);
+extern void dr_term(void);
 extern void dr_move(directionVector_t);
 
 #endif  /* DRIVE_H */

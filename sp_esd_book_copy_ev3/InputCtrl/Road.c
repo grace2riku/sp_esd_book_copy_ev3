@@ -2,6 +2,17 @@
 
 #include "Road.h"
 
+void rd_init(void) {
+
+    return;
+}
+
+
+void rd_term(void) {
+
+    return;
+}
+
 roadColor_t rd_getRoadColor(void) {
     unsigned char    light;
     roadColor_t     roadColor;

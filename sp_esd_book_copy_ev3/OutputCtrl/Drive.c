@@ -8,6 +8,18 @@ static directionVector_t lastDirection;
 static FrontBack_t dr_cvtFrontBack(directForward_t);
 static LeftRight_t dr_cvtLeftRight(directTurn_t);
 
+void dr_init(void) {
+    lastDirection.forward = eStopForward;
+    lastDirection.turn = eStraight;
+    return;
+}
+
+
+void dr_term(void) {
+    return;
+}
+
+
 void dr_move(directionVector_t direct) {
     mt_direction_t motor;   /* モータの駆動方向 */
 

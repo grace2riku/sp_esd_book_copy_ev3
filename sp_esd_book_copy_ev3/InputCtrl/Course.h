@@ -7,6 +7,8 @@ typedef enum {
     eDiffRight, /* 右にズレている */
 } diffCourse_t;
 
+extern void cs_init(void);
+extern void cs_term(void);
 extern diffCourse_t cs_detectDifference(void);
 
 #endif /* COURSE_H */

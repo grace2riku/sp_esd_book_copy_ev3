@@ -7,6 +7,7 @@ APPL_COBJS +=  \
 	Navi.o \
 	Motor.o \
 	Hook.o \
+	Drive.o \
 
 # COPTS += -DMAKE_BT_DISABLE
 INCLUDES += -I$(ETROBO_HRP3_WORKSPACE)/etroboc_common

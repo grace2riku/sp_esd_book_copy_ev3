@@ -1,6 +1,18 @@
 #include "Road.h"
 #include "Course.h"
 
+void cs_init(void) {
+    rd_init();
+    return;
+}
+
+
+void cs_term(void) {
+    rd_term();
+    return;
+}
+
+
 diffCourse_t cs_detectDifference(void) {
     roadColor_t     color;
     diffCourse_t    diff;

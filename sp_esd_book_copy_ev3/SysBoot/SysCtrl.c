@@ -22,7 +22,7 @@ void sc_init(void)
 {
 	ss_init();
 	mt_init();
-//	tr_init();
+	tr_init();
 	return;
 }
 
@@ -37,7 +37,7 @@ void sc_term(void)
 {
 	ss_term();
 	mt_term();
-//	tr_term();
+	tr_term();
 	return;
 }
 

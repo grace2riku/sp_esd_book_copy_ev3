@@ -10,6 +10,8 @@ typedef enum {
     eBlack      /* 黒 */
 } roadColor_t;
 
+extern void rd_init(void);
+extern void rd_term(void);
 extern roadColor_t rd_getRoadColor(void);
 
 #endif /* ROAD_H */
