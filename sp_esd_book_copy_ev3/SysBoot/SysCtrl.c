@@ -7,6 +7,7 @@
 /*** 利用ファイルのヘッダ ***/
 #include "../RoboApp/Trace.h"
 #include "../DrvApi/Sensor.h"
+#include "../DrvApi/Motor.h"
 #include "SysCtrl.h"
 
 /*** 公開関数 ********************************************/
@@ -20,7 +21,7 @@
 void sc_init(void)
 {
 	ss_init();
-//	mt_init();
+	mt_init();
 //	tr_init();
 	return;
 }
@@ -35,7 +36,7 @@ void sc_init(void)
 void sc_term(void)
 {
 	ss_term();
-//	mt_term();
+	mt_term();
 //	tr_term();
 	return;
 }

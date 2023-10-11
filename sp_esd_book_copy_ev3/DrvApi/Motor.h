@@ -20,6 +20,8 @@ typedef struct {
 } mt_direction_t;
 
 
+extern void mt_init(void);
+extern void mt_term(void);
 extern void mt_drvMotor(mt_direction_t);
 
 #endif /* MOTOR_H */
